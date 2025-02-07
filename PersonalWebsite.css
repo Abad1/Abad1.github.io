@@ -16,3 +16,15 @@ h3 {
 p {
     color: rgb(124, 241, 130);
 }
+
+projects {
+    display: flex;
+    width: 50vw;
+    height: 100vw;
+}
+
+.project {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
