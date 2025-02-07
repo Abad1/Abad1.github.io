@@ -17,7 +17,7 @@ p {
     color: rgb(124, 241, 130);
 }
 
-projects {
+.projects {
     display: flex;
     width: 50vw;
     height: 100vw;
