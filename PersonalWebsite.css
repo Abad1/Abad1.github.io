@@ -36,7 +36,6 @@ p {
 }
 
 .job{
-    flex: 1;
     padding: 20px;
     border: 1px solid #ccc;
 }
