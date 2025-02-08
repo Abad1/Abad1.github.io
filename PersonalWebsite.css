@@ -18,9 +18,11 @@ p {
 }
 
 .projects {
+    margin-left: auto;
+    margin-right:0;
     display: flex;
     width: 50vw;
-    height: 100vw;
+    height: 25vw;
 }
 
 .project {
