@@ -26,9 +26,12 @@ div.project {
 }
 
 div.project a {
+    white-space: initial;
     display: inline-block;
     text-align: center;
     text-decoration: none;
+    width: 20vw;
+    height: 30vh;
 }
 
 div.project a:hover {
