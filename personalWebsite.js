@@ -21,5 +21,6 @@ window.onload = function start(){
     if (deviceType === "Mobile"){
         document.querySelector(".summary").style.maxWidth = "100vw";
         document.querySelector(".work").style.width = "100vw";
+        document.querySelector("project").style.height = "33vh";
     }
 };
