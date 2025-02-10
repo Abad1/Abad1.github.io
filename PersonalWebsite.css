@@ -16,24 +16,32 @@ h3 {
 p {
     color: rgb(124, 241, 130);
 }
-
-.projects {
-    display: flex;
-    width: 50vw;
+div.summary {
+    max-width: 50vw;
 }
 
-.project {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #ccc;
+div.project {
+   overflow: auto;
+   white-space: nowrap;
 }
 
+div.project a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.project a:hover{
+    background-color: #777;
+}
 .work{
     display: flex;
     width: 50vw;
+    flex-wrap: wrap;
 }
 
 .job{
     padding: 20px;
     border: 1px solid #ccc;
+    width: 100vw;
 }
