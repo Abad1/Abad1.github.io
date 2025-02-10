@@ -15,6 +15,11 @@ function getDeviceType(){
     }
 }
 
-window.onload = function showDevice(){
-    document.getElementById("deviceType").innerHTML = getDeviceType();
+window.onload = function start(){
+    const deviceType = getDeviceType();
+    document.getElementById("deviceType").innerHTML = deviceType;
+    if (deviceType === "Mobile"){
+        document.querySelector(".summary").style.maxWidth = "100vw";
+        document.querySelector(".work").style.width = "100vw";
+    }
 };
