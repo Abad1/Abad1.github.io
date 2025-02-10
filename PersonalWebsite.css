@@ -25,23 +25,28 @@ div.project {
    white-space: nowrap;
 }
 
-div.project a{
+div.project a {
     display: inline-block;
     text-align: center;
     text-decoration: none;
 }
 
-div.project a:hover{
+div.project a:hover {
     background-color: #777;
 }
-.work{
+
+.work {
     display: flex;
     width: 50vw;
     flex-wrap: wrap;
 }
 
-.job{
+.job {
     padding: 20px;
     border: 1px solid #ccc;
     width: 100vw;
+}
+
+.home {
+    text-decoration: none;
 }

@@ -3,18 +3,18 @@ function myFunction() {
     document.getElementById("roach").style.display = "block";
 }
 
-const projects = document.getElementById("projects");
-
-function scrollLeft(){
-    projects.scrollBy({
-        left: -distance,
-        behavior: 'smooth'
-    });
+function getDeviceType(){
+    const userAgent = navigator.userAgent;
+    const width = window.innerWidth;
+    if (/Mobi|Android/i.test(userAgent) || width <= 768){
+        return "Mobile";
+    } else if ( /Tablet|iPad/i.test(userAgent) || (width > 768 && width <= 1024)){
+        return "Tablet";
+    } else {
+       return "Desktop";
+    }
 }
 
-function scrollRight(){
-    projects.scrollBy({
-        left: -distance,
-        behavior: 'smooth'
-    });
-}
+window.onload = function showDevice(){
+    document.getElementById("deviceType").innerHTML = getDeviceType();
+};
