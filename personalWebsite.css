@@ -21,17 +21,30 @@ div.summary {
 }
 
 div.project {
-   overflow: auto;
-   white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;  /* Prevent the links from wrapping to the next line */
+    justify-content: flex-start; /* Align the items to the start */
+    gap: 15px; /* Space between the links */
+    max-width: 90vw; /* Set a maximum width for the container */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding-bottom: 10px;
 }
 
 div.project a {
     white-space: initial;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     text-decoration: none;
-    width: 20vw;
-    height: 30vh;
+    min-width: 30vw;
+    height: 35vh;
+    padding-right: 20px;
+    margin-left: 20px;
+    border-right: 2px solid #777;
+}
+
+div.project a:last-child {
+    border-right: none;
 }
 
 div.project a:hover {

@@ -20,7 +20,12 @@ window.onload = function start(){
     document.getElementById("deviceType").innerHTML = deviceType;
     if (deviceType === "Mobile"){
         document.querySelector(".summary").style.maxWidth = "100vw";
-        document.querySelector(".work").style.width = "100vw";
-        document.querySelector("project").style.height = "33vh";
+        document.querySelector(".work").style.width = "85vw";
+        document.querySelectorAll(".project a").forEach(link => {
+            link.style.height = "33vh";
+            link.style.minWidth = "85vw";
+            link.style.marginLeft = "5px";
+            link.style.paddingRight = "5px";
+        });
     }
 };
