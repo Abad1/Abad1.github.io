@@ -1,5 +1,6 @@
 html {
     font-size: clamp(1rem, 1vw, 2rem);
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -42,7 +43,6 @@ div.project a {
     text-align: center;
     text-decoration: none;
     min-width: 30vw;
-   /* height: 35vw;*/
     padding-right: 20px;
     margin-left: 20px;
     border-right: 2px solid rgba(124, 241, 130, 0.5);
@@ -73,11 +73,18 @@ div.project a:hover {
     text-decoration: none;
 }
 
+.mobileImages {
+    display:flex;
+    flex-wrap: nowrap;
+    object-fit: cover;
+}
+.mobileImages img {
+    padding: 10px;
+    min-height: 30vh;
+    max-height: 70vh;
+}
 @media (hover: none) {
 
-    html {
-        color: red;
-    }
     h1 {
         color: red;
     }
@@ -100,6 +107,6 @@ div.project a:hover {
     }
 
     div.work {
-        width: 85vw;
+        width: 100vw;
     }
 }
