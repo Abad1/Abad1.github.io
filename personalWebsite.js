@@ -26,7 +26,6 @@ window.onload = function start(){
             link.style.minWidth = "85vw";
             link.style.marginLeft = "5px";
             link.style.paddingRight = "5px";
-            link.style.fontSize = "6rem";
         });
     }
 };
