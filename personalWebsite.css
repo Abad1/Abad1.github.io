@@ -73,10 +73,14 @@ div.project a:hover {
     text-decoration: none;
 }
 
+.desktopImages img{
+    max-width:50vw;
+}
+
 .mobileImages {
     display:flex;
     flex-wrap: nowrap;
-    object-fit: cover;
+    overflow-x: auto;
 }
 .mobileImages img {
     padding: 10px;
