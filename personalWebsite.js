@@ -3,16 +3,19 @@ function myFunction() {
     document.getElementById("roach").style.display = "block";
 }
 
+function isMobile() {
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    const isSmallScreen = window.innerWidth <= 768;
+    const isMobileAgent = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  
+    return isTouch || isSmallScreen || isMobileAgent;
+  }
+
 function getDeviceType(){
-    const userAgent = navigator.userAgent;
-    const width = window.innerWidth;
-    if (/Mobi|Android/i.test(userAgent) || width <= 768){
+    if (isMobile()){
         return "Mobile";
-    } else if ( /Tablet|iPad/i.test(userAgent) || (width > 768 && width <= 1024)){
-        return "Tablet";
-    } else {
-       return "Desktop";
     }
+    return "Desktop";
 }
 
 window.onload = function start(){

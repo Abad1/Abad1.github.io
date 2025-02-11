@@ -73,9 +73,12 @@ div.project a:hover {
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (hover: none) {
 
     html {
+        color: red;
+    }
+    h1 {
         color: red;
     }
 
