@@ -1,5 +1,5 @@
 html {
-    font-size: clamp(1.5rem, 2vw, 3rem);
+    font-size: clamp(1rem, 1vw, 2rem);
 }
 
 body {
@@ -74,6 +74,10 @@ div.project a:hover {
 }
 
 @media (max-width: 768px) {
+    div.summary {
+        max-width:100vw;
+    }
+
     div.project a {
         font-size: clamp(1.2rem, 4vw, 2.5rem); /* Font size scales for mobile */
         min-width: 80vw;
