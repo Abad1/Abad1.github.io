@@ -1,3 +1,7 @@
+html {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
 body {
     background-color: rgb(52, 52, 52);
 }
@@ -37,7 +41,7 @@ div.project a {
     text-align: center;
     text-decoration: none;
     min-width: 30vw;
-    height: 35vh;
+    height: fit-content;
     padding-right: 20px;
     margin-left: 20px;
     border-right: 2px solid #777;
