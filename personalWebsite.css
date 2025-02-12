@@ -138,5 +138,6 @@ div.project a:hover {
 
     .desktopImages {
         max-width: 100vw;
+        min-width: 100vw;
     }
 }
