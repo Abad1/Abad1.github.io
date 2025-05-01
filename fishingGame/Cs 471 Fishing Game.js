@@ -323,7 +323,7 @@ const InternalConfig = function (initConfig) { // eslint-disable-line no-unused-
 		 * @type {?string}
 		 * @default
 		 */
-		locale: null,
+		locale: 0,
 		/**
 		 * The canvas resize policy determines how the canvas should be resized by Godot.
 		 *
