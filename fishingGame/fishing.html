@@ -14,7 +14,6 @@ html, body, #canvas {
 body {
 	color: white;
 	background-color: black;
-	overflow: hidden;
 	touch-action: none;
 }
 
@@ -27,7 +26,7 @@ body {
 }
 
 #status, #status-splash, #status-progress {
-	position: absolute;
+	position: static;
 	left: 0;
 	right: 0;
 }
@@ -96,6 +95,7 @@ body {
 
 	</head>
 	<body>
+		<h1>this is a header</h1>
 		<canvas id="canvas">
 			Your browser does not support the canvas tag.
 		</canvas>
