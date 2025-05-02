@@ -19,6 +19,5 @@ function getDeviceType(){
 }
 
 window.onload = function start(){
-    const deviceType = getDeviceType();
-    document.getElementById("deviceType").innerHTML = deviceType;
+
 };
