@@ -46,6 +46,9 @@ p {
 div.summary {
     max-width: 50vw;
 }
+video {
+    width:80vw;
+}
 
 div.project {
     display: flex;
@@ -97,7 +100,7 @@ div.project a:hover {
 }
 
 .desktopImages img{
-    max-width:50vw;
+    max-width:80vw;
 }
 
 .mobileImages {
