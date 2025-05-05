@@ -91,7 +91,8 @@ div.project a:hover {
 
 .job {
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(124, 241, 130, 0.5);
+    ;
     width: 100vw;
 }
 
