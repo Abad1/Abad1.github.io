@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "personalWebsite.css">
+        <script src = "personalWebsite.js"></script>
+    </head>
+    <body>
+        <a href = "index.html" class = "home">
+           <h1>Back</h1>
+        </a>
+        <h1>Lua Interpreter</h1>
+        <p>In one of my classes, our professor made up a programming language and tasked the studends
+            with creating a lexer, a parser, and an intepreter to execute a program written in his
+            made-up language. </p>
+
+        <p>A lexer is a program that seperates the parts of a program and identifies what
+            they are. For example, it would read a parenthesis and mark it as some kind of syntax,
+            or a word and mark it as either a keyword or a variable name. When the lexer is finished
+            identifying all the content in the program, it returns a list of all the parts and their
+            category. The parts are called lexemes, which is why the program is called a lexer.
+        </p>
+
+        <p>The next component is the parser. It reads all the lexemes from the list created by the 
+            lexer and organizes them into what's called a syntax tree.
+        </p>
+
+        <p>Finally, the syntax tree is given to the interpreter, which traverses through the tree 
+            and executes the program.
+        </p>
+
+    </body>
+</html>
