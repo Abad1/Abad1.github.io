@@ -8,10 +8,45 @@
         <a href = "index.html" class = "home">
            <h1>Back</h1>
         </a>
+        
         <h1>Home network</h1>
+        
         <p>
-            the
+            For my home network I am using Ubiquiti equipment. I'm a big fan of the software and
+            interface that comes with it. All of the ethernet cables are custom length cat 6A that I 
+            terminated myself. The ends are plastic, and at first I thought I would regret not 
+            using metal ends, but since they light up really well with the ports on the switch,
+            I'm happy with how it turned out.
         </p>
-        <img src = "media/cockroach.gif" alt = "image of drill">
+
+        <h2>Router: UniFi Dream Machine Pro</h2>
+        
+        <p>
+            It has 2 10G SFP ports, one of which is connected to my modem with an RJ45 to SFP adapter,
+            and the other is connected to my switch. The only RJ45 port I'm using on my router is 
+            for my homemade NAS, which you can learn more about <a href = "nas.html">here</a>
+        </p>
+        
+        <h2>Main Switch: UniFi Switch Pro XG 10 PoE</h2>
+
+        <p>
+            This is a 10G switch that's connected to my rotuer via SFP. It's powering my wireless 
+            access point with power over ethernet (PoE), and there's a long cable that runs into my room 
+            which I plan to eventually connect to a small PoE utility switch for my desktop PC and 
+            Nintendo Switch.
+        </p>
+
+        <h2>UniFi 7 Pro Wall</h2>
+
+        <p>
+            This is a PoE access point with WiFi 7. Ubiquiti's software can show you all the different
+            channels on each frequency, and will automatically use the least congested channel. I have 
+            the 2.4GHz frequency disabled and use the 5GHz channels.
+        </p>
+
+        <div class = "mobileImages">
+            <img id = "rlMobile" src = "media/network.webp" alt = "image of drill">
+        </div>
+        
     </body>
 </html>
